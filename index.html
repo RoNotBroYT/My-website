@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>This is the RoNotBroYT project website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #000 60%, #00eaff 100%);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #00eaff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    header {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 32px 0 16px 0;
+      text-align: center;
+      box-shadow: 0 4px 32px #00eaff22;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      margin: 0;
+      color: #00eaff;
+    }
+    main {
+      width: 100%;
+      max-width: 600px;
+      margin: 36px auto 0 auto;
+      background: rgba(0, 0, 0, 0.80);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px #00eaff44;
+      padding: 32px 20px 36px 20px;
+    }
+    section {
+      margin-bottom: 24px;
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.7rem;
+      color: #00eaff;
+      letter-spacing: 1.5px;
+    }
+    .game-btn {
+      display: inline-block;
+      margin: 18px 0;
+      padding: 18px 42px;
+      font-size: 1.2rem;
+      color: #00eaff;
+      background: #111;
+      border: 2px solid #00eaff;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 
+        background 0.2s,
+        color 0.2s,
+        transform 0.15s,
+        box-shadow 0.2s;
+      box-shadow: 0 0 16px 0 #00eaff22;
+    }
+    .game-btn:hover, .game-btn:focus {
+      background: #00eaff;
+      color: #111;
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 4px 32px 0 #00eaff88;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 16px 2vw 20px 2vw;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      .game-btn {
+        width: 90vw;
+        min-width: 0;
+        padding: 14px 0;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This is the RoNotBroYT project website</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Games</h2>
+      <a class="game-btn" href="https://my-games-ruby.vercel.app" target="_blank" rel="noopener noreferrer">
+        🕹️   My games so far
+      </a>
+    </section>
+  </main>
+</body>
+</html>
